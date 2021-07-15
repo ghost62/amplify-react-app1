@@ -9,6 +9,7 @@ import UploadImage from '../HandleImages/UploadImage';
 function ListModal({ state, dispatch, saveList }) {
   const [uploadToS3] = useS3();
   const [fileToUpload, setFileToUpload] = useState();
+  const {imageKey} = state;
 
   async function saveList() {
     const imageKey = uploadToS3(fileToUpload);
@@ -67,7 +68,7 @@ function ListModal({ state, dispatch, saveList }) {
             label='Description'
             placeholder='Things that my pretty list is about'
           ></Form.TextArea>
-          <UploadImage getSelectedFile={getSelectedFile} />
+          <UploadImage getSelectedFile={getSelectedFile} imageKey={imageKey} />
         </Form>
       </Modal.Content>
       <Modal.Actions>

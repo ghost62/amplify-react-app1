@@ -26,6 +26,7 @@ const intialState = {
   lists: [],
   isModalOpen: false,
   modalType: '',
+  imageKey:''
 };
 
 function listReducer(state = intialState, action) {
@@ -75,6 +76,7 @@ function listReducer(state = intialState, action) {
         id: newValue.id,
         title: newValue.title,
         description: newValue.description,
+        imageKey: newValue.imageKey
       };
     }
     default:

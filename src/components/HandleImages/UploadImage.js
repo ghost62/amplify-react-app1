@@ -2,7 +2,7 @@ import { Storage } from 'aws-amplify';
 import React, { useEffect, useRef, useState } from 'react';
 import { Button, Header, Image } from 'semantic-ui-react';
 
-function UploadImage({ getSelectedFile }) {
+function UploadImage({ getSelectedFile, imageKey }) {
   const inputRef = useRef();
   const [image, setImage] = useState(
     'https://react.semantic-ui.com/images/wireframe/image.png'
@@ -20,7 +20,7 @@ function UploadImage({ getSelectedFile }) {
   return (
     <>
       <Header as='h4'>Upload your image</Header>
-      <Image size='large' src={image} />
+      <Image size='large' src={imageKey ? imageKey: image} />
       <input
         ref={inputRef}
         type='file'
