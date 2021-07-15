@@ -1,6 +1,6 @@
 {
     "identityPoolName": "reactamplifyapp71f4ee5b_identitypool_71f4ee5b",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "reacta71f4ee5b",
     "userPoolName": "reactamplifyapp71f4ee5b_userpool_71f4ee5b",
     "autoVerifiedAttributes": [
