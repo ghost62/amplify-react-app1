@@ -21,7 +21,7 @@ function List(props) {
       return fetchImageUrl();
     }
     setIsLoading(false);
-  }, []);
+  }, [imageKey]);
 
   const content = <Loader />;
   return (
