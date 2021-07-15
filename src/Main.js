@@ -67,7 +67,7 @@ function listReducer(state = intialState, action) {
       delete newValue.children;
       delete newValue.listItems;
       delete newValue.dispatch;
-      console.log(newValue);
+      console.log('Edit newValue',newValue);
       return {
         ...state,
         isModalOpen: true,

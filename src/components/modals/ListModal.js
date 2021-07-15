@@ -67,7 +67,7 @@ function ListModal({ state, dispatch, saveList }) {
             label='Description'
             placeholder='Things that my pretty list is about'
           ></Form.TextArea>
-          <UploadImage getSelectedFile={getSelectedFile} />
+          <UploadImage getSelectedFile={getSelectedFile} state={state}/>
         </Form>
       </Modal.Content>
       <Modal.Actions>
