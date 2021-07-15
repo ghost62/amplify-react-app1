@@ -20,7 +20,7 @@ function UploadImage({ getSelectedFile }) {
   return (
     <>
       <Header as='h4'>Upload your image</Header>
-      <Image size='large' src={state.image ? state.image: image} />
+      <Image size='large' src={image} />
       <input
         ref={inputRef}
         type='file'
